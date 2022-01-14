@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form method="get" action=".">
+        <label>
+            Digite o CEP:
+            <input name="cep" type="number" id="cep" size="10" maxlength="9"
+               onblur="pesquisacep(this.value);" />
+        </label>
+        <label class="result">
+            Rua: <input name="rua" type="text" id="rua" style="margin-left: 23px;" disabled/>
+        </label>
+        <label class="result">
+            Bairro: <input name="bairro" type="text" id="bairro" style="margin-left: 6px;" disabled/>
+        </label>
+
+        <label class="result">
+            Cidade: <input name="cidade" type="text" id="cidade" style="margin-left: 2px;" disabled/>
+        </label>
+        <label class="result">
+            UF: <input name="uf" type="text" id="uf" style="margin-left: 28px;" disabled/>
+        </label>
+        
+        <label class="result">
+            DDD: <input name="ddd" type="number" id="ddd" style="margin-left: 13px;" disabled/>
+        </label>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
